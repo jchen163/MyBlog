@@ -1,0 +1,16 @@
+<form class="col-sm-8 col-sm-offset-2" name="myForm" >
+  <div class="form-group">
+      <label>Username</label>
+      <input type="text" name="username" class="form-control" [(ngModel)]="user.username" required>
+  </div>
+  <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" class="form-control" [(ngModel)]="user.email" required>
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" name="password" class="form-control" [(ngModel)]="user.password" required>
+</div>
+  <button (click)="save()">Register</button>
+
+</form>

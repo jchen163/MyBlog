@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-offset-3 col-md-8">
+    <form class="form">
+      <div class="form-group">
+        <label>Post title</label>
+        <input type="text" name="postId" class="form-control" [(ngModel)]="post.title" />
+      </div>
+      <div class="form-group">
+        <label>Post description</label>
+        <input type="text" name="postName" class="form-control" [(ngModel)]="post.description" />
+      </div>
+      <button (click)="createPost()" class="btn btn-primary">Create</button>
+    </form>
+  </div>
+</div>

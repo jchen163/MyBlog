@@ -1,0 +1,12 @@
+<button class="btn btn-danger btn-sm" (click)="like()">Like-{{post.like.length}}</button><br/>
+<label>Liked by:</label>
+<p> {{post.like}}</p>
+<label>Comments: </label>
+<ul *ngFor="let cmt of post.comments">
+<li>{{cmt}}</li>
+</ul>
+<textarea name="comment" [(ngModel)]="comment">
+Your comment:  
+</textarea>
+<button class="btn btn-warning btn-sm"  (click)="sent()">Sent</button>
+<br/>

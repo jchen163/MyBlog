@@ -1,0 +1,22 @@
+<div class="navbar navbar-default">
+  <ul class="nav navbar-nav">
+    <li>
+      <a href="#" *ngIf="toogleLink" [routerLink]='["/home"]'>Home</a>
+    </li>
+    <li>
+      <a href="#"*ngIf="!toogleLink" [routerLink]='["/posts"]'>List posts</a>
+    </li>
+    <li>
+      <a href="#" *ngIf="!toogleLink"[routerLink]='["/create"]'>Create Post</a>
+    </li>
+    <li>
+      <a *ngIf="!toogleLink" (click)='logout()'>Logout</a>
+    </li>
+    <li>
+    <a href="#" *ngIf="toogleLink" [routerLink]='["/register"]'>Register</a>
+  </li>
+    <li>
+      <a href="#" *ngIf="toogleLink" [routerLink]='["/login"]'>Login</a>
+    </li>
+  </ul>
+</div>

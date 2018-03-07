@@ -1,0 +1,28 @@
+<div class="container-fluid">
+<h1 class="page-header">Blog Feed</h1>
+
+<!-- New Blog Form -->
+
+  <!-- Title Input -->
+
+   <div class="panel-group">
+      <div class="panel panel-info " *ngFor = "let post of posts">
+        <!-- <div  class="col-sm-6" style="background-color:lavenderblush;"> -->
+     <div class="panel-heading">Title:{{post.title}} </div>
+     <div class="panel-body">
+        <label>Description: </label>
+        <p>{{post.description}}</p>
+        <label>Posted by: </label>
+        <p>{{post.from}}</p>
+        <app-show-details [post]="post" *ngIf = "show==post">
+        </app-show-details>
+        <button class="btn btn-warning  btn-sm" (click)="comment(post)">
+            View Posts
+          </button>
+        </div>
+        </div>
+      </div>
+      </div>
+      
+        
+  

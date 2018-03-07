@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+.container-fluid, navbar{
+    width:65%
+}
+.navbar .navbar-default{
+    width:65%;
+    text-align: center;
+
+}
